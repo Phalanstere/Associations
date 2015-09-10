@@ -1,0 +1,55 @@
+#panel
+{
+position: absolute;
+left: 15%;
+top: 5%;
+width: 85%;
+height: 92%;
+background: orange;	
+}
+
+
+#synsets
+{
+position: absolute;
+left: 0%;
+top: 5%;
+width: 15%;
+height: 92%;
+background: darkcyan;	
+}
+
+.synset
+{
+padding-left: 10px;
+margin-top: 4px;
+cursor: pointer;
+font-weight: 800;
+color: white;	
+}
+
+.synset:hover
+{
+background: gainsboro;	
+}
+
+
+.terms
+{
+position: relative;
+float: left;
+padding: 2px;	
+}
+
+
+.field
+{
+position: relative;	
+float: left;
+background: gainsboro;
+border:solid 1px black;
+padding: 4px;
+width: 200px;
+height: 160;
+overflow-y: auto;
+}
