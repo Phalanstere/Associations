@@ -1,3 +1,45 @@
+@font-face {
+	font-family: Oswald;
+	src: url(../fonts/Oswald-Bold.ttf);
+}
+
+
+#page
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;	
+}
+
+
+#splashScreen
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: white;	
+z-index: 10;	
+overflow: hidden;
+}
+
+#titling
+{
+position: absolute;
+width: auto;
+height: auto;
+text-align: center;	
+font-family: Inconsolata;
+font-size: 60px;
+color: darkcyan;
+opacity: 0;	
+}
+
+
 #panel
 {
 position: absolute;
@@ -7,6 +49,32 @@ width: 85%;
 height: 92%;
 background: orange;	
 }
+
+
+#animation_panel
+{
+position: absolute;
+left: 0;
+top: 5%;
+width: 100%;
+height: 95%;
+background: gainsboro;	
+z-index: 2;	
+display: none;
+}
+
+
+.showterm
+{
+position: absolute;
+left: -80%;
+top: 5%;
+width: auto;
+height: auto;
+font-family: "Oswald";
+font-size: 2em;
+}
+
 
 
 #synsets
@@ -53,3 +121,25 @@ width: 200px;
 height: 160;
 overflow-y: auto;
 }
+
+
+#Toolbar
+{
+position: absolute;
+left:0;
+top: 0;
+width: 100%;
+height: 5%;
+background: gainsboro;
+z-index: 5;	
+}
+
+#Toolbar #searchme
+{
+position: relative;
+top: 10px;
+left: 20px;
+height: 20px;
+background: darkgray;	
+}
+

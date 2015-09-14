@@ -10,16 +10,22 @@
         type="text/javascript"></script>
     
     <script type="text/javascript" src="lib/associations.js"></script>
+    <script type="text/javascript" src="lib/interface.js"></script>
+    <script type="text/javascript" src="lib/design_patterns.js"></script>
+        
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script type="text/javascript" src="./node_modules/@planeshifter/liquid-screen/dist/liquid.js"></script>
+    
+    
   </head>
 
-	<input id = "searchme" type="text" name="lname"><br>
 
 
    <script>
-   var g;
+   var GlobalAnimation;
    
    	function Start() {
-   		g = new Association.Game();
+   		GlobalAnimation = new Association.Game();
    	};
 
 
@@ -27,9 +33,13 @@
 
 		$("#searchme").keyup(function(e) {
 		    if (e.which == 13) {
-   				g.query(this.value);
+   				GlobalAnimation.query(this.value);
 		    }
 		});
+
+
+
+
 
 	});	
 		
@@ -38,11 +48,29 @@
   </script>   	
 
   <body onload = "javascript:Start()">
+  	   	
 		
-   	
-  <div id = "panel"></div>
-  <div id = "synsets"></div>  		
-	
+  <div id = "Toolbar"> 
+  	<input id = "searchme" type="text" name="lname"><br>
+  </div>
+  
+  <div id = "page">  
+	  <div id = "splashScreen">
+	  	<div id = "titling">Automatic Brainstorming</div>  	
+	  </div>	  	
+ 	
+	  		   	
+	  <div id = "panel"></div>
+	  <div id = "animation_panel">
+	  	<div class = "showterm" id = "term1">TERM 1</div>
+		<div class = "showterm" id = "term2">TERM 2</div>
+		<div class = "showterm" id = "term3">TERM 3</div>	 
+		<div class = "showterm" id = "term4">TERM 3</div>		
+		 	  	
+	  </div>  
+	  
+	  <div id = "synsets"></div>  		
+  </div>	
 		
   </body>
 </html>
